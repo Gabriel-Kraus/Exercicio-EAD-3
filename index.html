@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Terra-Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e navegação -->
+    <header>
+        <div class="logo">
+            <h1>Blog da Terra-Média</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#topo">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de posts -->
+    <div class="conteudo" id="topo">
+        <div class="post">
+            <h2 class="titulo-post">O Anel e o Destino de Frodo</h2>
+            <p class="data-post">Publicado em 25 de Outubro de 2024</p>
+            <div class="imagem-post">
+                <img src="frodo.jpg" alt="Frodo e o Anel">
+            </div>
+            <p class="resumo-post">Frodo Bolseiro é um personagem central na história do Senhor dos Anéis, incumbido de uma tarefa que decidirá o destino de todo o mundo. Sua jornada é repleta de desafios, amizades e sacrifícios. Mas como esse simples hobbit se torna um herói?</p>
+            <button class="btn-leia-mais" onclick="togglePost(1)">Ler mais</button>
+            <div id="post-completo-1" class="post-completo">
+                <p>Frodo Bolseiro, um hobbit tranquilo da Comarca, se vê em uma missão impossível quando herda o Um Anel. A missão não é apenas perigosa, mas também traz consigo uma grande responsabilidade. Com a ajuda de seus amigos, ele precisa destruir o anel antes que o Senhor das Trevas, Sauron, consiga tomar posse dele.</p>
+                <p>Ao longo da jornada, Frodo aprende sobre coragem, lealdade e a natureza do mal. Ele enfrenta tentativas de corromper seu espírito, mas sempre é guiado por sua amizade com Samwise Gamgee e a orientação dos outros membros da Sociedade do Anel.</p>
+                <p>No final, é claro, Frodo paga um alto preço pela missão. Mas o sacrifício é necessário para garantir a paz no mundo.</p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="titulo-post">Aragorn: O Rei que se Escondeu</h2>
+            <p class="data-post">Publicado em 27 de Outubro de 2024</p>
+            <div class="imagem-post">
+                <img src="aragorn.jpg" alt="Aragorn, o Rei do Norte">
+            </div>
+            <p class="resumo-post">Aragorn, o herdeiro do trono de Gondor, é um dos maiores heróis do Senhor dos Anéis. Embora ele tenha a linhagem real, por muitos anos ele viveu como um ranger nas florestas, evitando seu destino como rei. O que o motiva a aceitar sua verdadeira identidade?</p>
+            <button class="btn-leia-mais" onclick="togglePost(2)">Ler mais</button>
+            <div id="post-completo-2" class="post-completo">
+                <p>Aragorn, também conhecido como Estel, tem uma história de vida marcada por perda, solidão e determinação. Criado em segredo por Elrond, ele é o último descendente direto de Isildur, o antigo rei de Gondor. Ao longo da história, Aragorn vai mostrando seu verdadeiro valor, não apenas como guerreiro, mas também como líder e rei.</p>
+                <p>Durante a guerra contra Sauron, Aragorn prova que é digno do trono de Gondor, mas sua verdadeira luta é contra a dúvida em si mesmo e o medo de falhar. Seu amor por Arwen, a elfa, também é um fator importante em sua decisão de assumir sua verdadeira identidade.</p>
+                <p>No final, Aragorn não apenas derrota o mal, mas assume seu posto como Rei Elessar, trazendo uma nova era de paz para a Terra-média.</p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="titulo-post">Gollum: A Tragédia de um Hobbit Corrompido</h2>
+            <p class="data-post">Publicado em 30 de Outubro de 2024</p>
+            <div class="imagem-post">
+                <img src="gollum.jpg" alt="Gollum e o Um Anel">
+            </div>
+            <p class="resumo-post">Gollum é um dos personagens mais trágicos e complexos da Terra-média. Sua história é marcada pela obsessão e pela corrupção do Um Anel. Mas quem ele era antes de se transformar em Gollum? E o que o tornou tão obcecado pelo Anel?</p>
+            <button class="btn-leia-mais" onclick="togglePost(3)">Ler mais</button>
+            <div id="post-completo-3" class="post-completo">
+                <p>Gollum, antes de ser corrompido pelo Anel, era um hobbit conhecido como Sméagol. Ele encontrou o Anel de forma acidental e, ao tomar posse dele, foi imediatamente consumido pela ganância e pela inveja. Ao longo do tempo, o Anel transformou Sméagol em Gollum, uma criatura obcecada pelo "meu precioso".</p>
+                <p>A obsessão de Gollum com o Anel é uma das histórias mais trágicas de "O Senhor dos Anéis". Sua luta interna entre sua antiga identidade e a criatura corrompida que se tornou é visível, especialmente nas interações com Frodo e Sam. Gollum, embora tenha feito coisas horríveis, também se vê como vítima de sua própria obsessão.</p>
+                <p>No fim, Gollum tem um papel crucial na destruição do Anel, embora de uma maneira muito trágica, e seu destino é um lembrete do quão grande é o poder corruptor do Anel.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção sobre -->
+    <div class="sobre" id="sobre">
+        <h2>Sobre o Blog</h2>
+        <p>O Blog da Terra-Média foi criado para explorar o universo vasto e complexo da obra de J.R.R. Tolkien. Aqui, você encontrará artigos e discussões sobre os personagens, o enredo e os temas da Terra-média.</p>
+    </div>
+
+    <!-- Formulário de Contato -->
+    <div class="contato" id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+            <div class="campo-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo-form">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Esse blog foi desenvolvido por Gabriel Kraus.</p>
+    </footer>
+
+    <script>
+        // Função para mostrar ou esconder o conteúdo completo do post
+        function togglePost(postId) {
+            var postCompleto = document.getElementById('post-completo-' + postId);
+            var btn = document.querySelector('#post-completo-' + postId).previousElementSibling;
+
+            if (postCompleto.style.display === 'none' || postCompleto.style.display === '') {
+                postCompleto.style.display = 'block';
+                btn.textContent = 'Ler menos';
+            } else {
+                postCompleto.style.display = 'none';
+                btn.textContent = 'Ler mais';
+            }
+        }
+    </script>
+
+</body>
+</html>
